@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Azalei Custom</title>
+        <link rel="stylesheet" href="style.css">
+        
+    <head>
+
+    <body>
+        <header>
+            <section id="About">
+                <h2>Azalei Job application Portal</h2>
+                <p>Welcome to the Azalei Job Application Portal. We are excited to have you here and look forward to reviewing your applications.</p>
+
+            </section>
+        </header>
+        <main>
+            <section id="hero">
+                <div class="role">
+                    <div class="role1">
+                        <h2>Current Job Opening</h2>
+                        <h3>Human Resource Assistant</h3>
+                        <h3>Job Description</h3>
+                        <p>We are looking for a detail-oriented and organized Human Resource Assistant to join our team based in Nairobi. The HR Assistant will support the HR department in various administrative tasks, including recruitment, onboarding, employee records management, and benefits administration.</p>
+                    </div>
+                    <div class="requirements">
+                        <h3>Key Responsibilities</h3>
+                    <ul>
+                        <li>Assist in the recruitment process by posting job openings, screening resumes, and scheduling interviews.</li>
+                        <li>Support the onboarding process for new hires, including preparing orientation materials and conducting orientation sessions.</li>
+                        <li>Maintain employee records and ensure compliance with company policies and legal requirements.</li>
+                        <li>Assist in benefits administration, including enrollment, changes, and inquiries.</li>
+                        <li>Assist in organizing training and development programs for employees.</li>
+                    </ul>
+                    <h3>Desired Qualifications</h3>
+                    <ul>
+                        <li>Bachelor's degree in Human Resources, Business Administration, or a related field.</li>
+                        <li>1-2 years of experience in HR or administrative roles.</li>
+                        <li>Strong organizational and time management skills.</li>
+                        <li>Excellent communication and interpersonal skills.</li>
+                        <li>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint).</li>
+                        <li>Knowledge of HR software and databases is a plus.</li>
+                    </ul>
+                </div>
+                <div class="form">
+                    <h3>How to Apply</h3>
+                    <div class="apply">
+                        <p>If you are interested in this position, please fill out the application form below and submit your resume and cover letter.</p>
+                        <form action="submit_application.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required><br><br>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            <div class="email">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required><br><br>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            <div class="password">
+                                <label for="password">Password:</label>
+                                <input type="password" id="password" name="password" required minlength="8"><br><br>
+                                <div class="error-message" id="passwordError"></div>
+                            </div>
+                            <div class="phone">
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="phone" name="phone" required><br><br>
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                            <div class="resume">
+                                <label for="resume">Resume:</label>
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+                                <div class="error-message" id="resumeError"></div>
+                            </div>
+                            <div class="submit">
+                                <button type="submit">Submit Application</button>
+                            </div>
+
+                        </form>
+                    </div> 
+                </div>
+                    
+            </section>
+            <section id="stories">
+                <h2>Our Success Stories</h2>
+                <div class="stories1">
+                    <h2>Sense of Belonging</h2>
+                    <p>Over the years we have created a community where people can come together share stories and positively build and impact the community through body positivity and self-esteem.</p>
+                    <p>We have had the pleasure of working with many talented individuals and organizations, and we are proud to showcase some of their success stories.</p>
+                </div>
+                <div class="stories2">
+                    <h2>Confidence</h2>
+                    <p>Through our brand we have been able to to build our clients confidence.Our clothes elevate your looks hence leave you feeling young,energetic and confident.</p>
+                    <p>We have received numerous testimonials from our clients who have experienced a boost in their self-esteem and confidence after wearing our clothes.</p>
+                </div>
+                <div class="stories3">
+                    <h2>Inclusivity</h2>
+                    <p>We believe that everyone deserves to feel confident and beautiful in their own skin. Our brand is committed to inclusivity, offering a wide range of sizes and styles to cater to all body types.</p>
+                    <p>Our brand also offers clothes that suit different body shapes and we also offer customization services.</p>
+                </div>
+            </section>
+            <section id="images">
+                <div class="stories-imgs">
+                    <div class="images">
+                        <div class="img1">
+                            <img src="images/img1.jpg" alt="Success Story 1">
+                        </div>
+                        <div class="img2">
+                            <img src="images/img2.jpg" alt="Success Story 2">
+                        </div>
+                        <div class="img3">
+                            <img src="images/img3.jpg" alt="Success Story 3">
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button class="prev" onclick="prevImage()">&#10094;</button>
+                        <button class="next" onclick="nextImage()">&#10095;</button>
+                    </div>
+                </div>
+            </section>  
+        </main>
+        <footer>
+            <p>&copy; 2023 Azalei Job Application Portal. All rights reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+
+    </body>
+        
+</html>
